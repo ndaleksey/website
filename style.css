@@ -8,6 +8,7 @@
 body {
 	width: 1024px;
 	margin: 0 auto;
+	background: #333;
 }
 
 ul {
@@ -15,9 +16,39 @@ ul {
 	flex-direction: row;
 }
 
-a:hover {
+a, a:hover {
 	text-decoration: none;
 }
-a:hover {
-	text-decoration: none;
+
+h1.title {
+	text-align: center;
+	color: #e00;
+	background: black;
+}
+
+ul.test-menu {
+	position: relative;
+	display: flex;
+	width: 100%;
+	flex-wrap: nowrap;
+	flex-flow: row;
+	justify-content: center;
+}
+
+li.test-menu-item {
+	padding: 0;
+}
+
+li.test-menu-item a {
+	padding: 10px 20px;
+	margin: 0;
+	display: inline-block;
+}
+
+li.test-menu-item:hover {
+	background: #555;
+}
+
+li.test-menu-item a:hover {
+	background: #555;
 }
